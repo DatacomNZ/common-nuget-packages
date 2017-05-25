@@ -1,0 +1,1 @@
+nuget pack "src/Datacom.Common/Datacom.Common.csproj"

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Datacom.Common</id>
+    <version>1.0.0</version>
+    <title>Datacom.Common</title>
+    <authors>Niall Duane</authors>
+    <owners>Datacom</owners>
+    <licenseUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages</licenseUrl>
+    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages</projectUrl>
+    <iconUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Nuget package that gives some basic functionality.
+      This includes: Search filter and result functionality that incorporates server side paging and sorting. Default exceptions.
+      
+      Please read the project readme for more information.
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Searching, paging, sorting, basic exceptions, string extensions</tags>
+  </metadata>
+</package>
