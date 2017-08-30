@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Datacom.Common.Search
+namespace Datacom.Common.Collections
 {
     public class FilterSort
     {

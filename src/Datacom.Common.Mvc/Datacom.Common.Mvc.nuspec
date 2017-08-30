@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Datacom.Common</id>
+    <id>Datacom.Common.Mvc</id>
     <version>1.0.0</version>
-    <title>Datacom.Common</title>
+    <title>Datacom.Common.Mvc</title>
     <authors>Niall Duane</authors>
     <owners>Datacom</owners>
     <licenseUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages</licenseUrl>
-    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages/Datacom.Common/ReadMe.md</projectUrl>
+    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages/Datacom.Common.Collections/ReadMe.md</projectUrl>
     <iconUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
@@ -19,6 +19,6 @@
     <releaseNotes>
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>Exceptions, Extensions</tags>
+    <tags></tags>
   </metadata>
 </package>

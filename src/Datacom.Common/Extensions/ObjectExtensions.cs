@@ -8,7 +8,12 @@ namespace Datacom.Common.Extensions
 {
     public static class ObjectExtensions
     {
-        internal static object GetPropertyByName(this object helper, string propertyName)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="propertyName"></param>
+        /// <returns></returns>
+        public static object GetPropertyByName(this object helper, string propertyName)
         {
             if (helper != null && (string.IsNullOrEmpty(propertyName)))
             {

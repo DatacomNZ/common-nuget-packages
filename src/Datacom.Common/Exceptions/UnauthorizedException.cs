@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace Datacom.Common.Exceptions
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class UnauthorizedException : UnauthorizedAccessException
     {
         public UnauthorizedException(string message, int errorCode = 0, int attempts = 0, int remainingAttempts = 0)

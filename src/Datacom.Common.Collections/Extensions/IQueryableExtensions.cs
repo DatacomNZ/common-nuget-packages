@@ -1,5 +1,4 @@
 ﻿using Datacom.Common.Exceptions;
-using Datacom.Common.Search;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +6,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace Datacom.Common.Extensions
+namespace Datacom.Common.Collections.Extensions
 {
     public static class IQueryableExtensions
     {

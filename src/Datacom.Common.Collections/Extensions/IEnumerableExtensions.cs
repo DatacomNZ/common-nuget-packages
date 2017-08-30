@@ -1,11 +1,11 @@
 ﻿using Datacom.Common.Exceptions;
-using Datacom.Common.Search;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Datacom.Common.Extensions;
 
-namespace Datacom.Common.Extensions
+namespace Datacom.Common.Collections.Extensions
 {
     public static class IEnumerableExtensions
     {

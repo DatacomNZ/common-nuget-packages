@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace Datacom.Common.Exceptions
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class PropertyException : Exception
     {
         public string Property { get; private set; }

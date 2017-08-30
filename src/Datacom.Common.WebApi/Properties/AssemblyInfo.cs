@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Datacom.Common")]
+[assembly: AssemblyTitle("Datacom.Common.WebApi")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Datacom.Common")]
+[assembly: AssemblyProduct("Datacom.Common.WebApi")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fe411881-d225-49a3-97b9-b7152d72343f")]
+[assembly: Guid("f0aac44b-ac09-4212-a0cf-6c7ab4c053d9")]
 
 // Version information for an assembly consists of the following four values:
 //
