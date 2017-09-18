@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Datacom.Common</id>
-    <version>1.0.0</version>
+    <version>$version$</version>
     <title>Datacom.Common</title>
     <authors>Niall Duane</authors>
     <owners>Datacom</owners>
