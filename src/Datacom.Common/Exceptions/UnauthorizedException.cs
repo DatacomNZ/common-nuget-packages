@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Datacom.Common.Exceptions
 {
     /// <summary>
-    /// 
+    /// Used for authentication when you want to record the attempts and remaining attempts.
     /// </summary>
     public class UnauthorizedException : UnauthorizedAccessException
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Datacom.Common.Exceptions
 {
     /// <summary>
-    /// 
+    /// Allows the developer to specify the resource that no longer has permission.
     /// </summary>
     public class ForbiddenException : UnauthorizedAccessException
     {

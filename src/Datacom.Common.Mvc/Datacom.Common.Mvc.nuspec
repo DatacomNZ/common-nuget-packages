@@ -7,7 +7,7 @@
     <authors>Niall Duane</authors>
     <owners>Datacom</owners>
     <licenseUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages</licenseUrl>
-    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages/Datacom.Common.Mvc/ReadMe.md</projectUrl>
+    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages/src/Datacom.Common.Mvc/ReadMe.md</projectUrl>
     <iconUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
