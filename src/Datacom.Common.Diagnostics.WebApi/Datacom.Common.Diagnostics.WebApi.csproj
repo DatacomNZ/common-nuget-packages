@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,15 +54,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\Controllers\v0\HealthCheckController.cs" />
+    <Content Include="Content\Api\Controllers\v0\HealthCheckController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Datacom.Common.Diagnostics.WebApi.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datacom.Common.Diagnostics\Datacom.Common.Diagnostics.csproj">
-      <Project>{A1C2D38A-91F7-4066-B06C-45DBDE144778}</Project>
+      <Project>{a1c2d38a-91f7-4066-b06c-45dbde144778}</Project>
       <Name>Datacom.Common.Diagnostics</Name>
     </ProjectReference>
   </ItemGroup>
