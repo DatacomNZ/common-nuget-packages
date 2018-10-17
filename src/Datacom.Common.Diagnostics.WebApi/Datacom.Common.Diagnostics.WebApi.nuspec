@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Datacom.Common.Diagnostics.WebApi</id>
-    <version>1.0.0-alpha01</version>
+    <version>$version$</version>
     <title>$title$</title>
     <authors>Troy Gorringe</authors>
     <owners>Datacom NZ</owners>
@@ -15,15 +15,8 @@
     <copyright>Copyright 2018</copyright>
     <tags></tags>
     <dependencies>
-      <dependency id="Datacom.Common.Diagnostics" version="1.0.0-alpha01" />
+      <dependency id="Datacom.Common.Diagnostics" version="1.0.0-alpha03" />
       <dependency id="System.ValueTuple" version="4.5.0" />
     </dependencies>
-
   </metadata>
-  <!-- Embed the health controller file -->
-  <files>
-    <file src="Content\**\*.cs" target="content"/>
-    <file src="bin\**\*.*" exclude="bin\**\*.*" />
-
-  </files>
 </package>

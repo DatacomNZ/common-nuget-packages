@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web.Http;
 
@@ -9,9 +11,9 @@ namespace Datacom.Common.Diagnostics.WebApi.Api.Controllers.v0
     [RoutePrefix("api/v0/healthcheck")]
     public class HealthCheckController : ApiController
     {
-        private readonly ICheckAvailability[] availabilityCheckers;
+        private readonly List<ICheckAvailability> availabilityCheckers;
 
-        public HealthCheckController(ICheckAvailability[] availabilityCheckers)
+        public HealthCheckController(List<ICheckAvailability> availabilityCheckers)
         {
             this.availabilityCheckers = availabilityCheckers;
         }
@@ -20,17 +22,16 @@ namespace Datacom.Common.Diagnostics.WebApi.Api.Controllers.v0
         [Route("isalive")]
         public async Task<IHttpActionResult> IsAliveAsync()
         {
-            var checksAndTasks = new List<(ICheckAvailability, Task<bool>)>(availabilityCheckers.Length);
-
-            // Kick of tasks in parallel to perform checks
-            foreach (var serviceToCheck in availabilityCheckers)
+            if (!availabilityCheckers.Any())
             {
-                var task = serviceToCheck.CheckAccessAsync();
-                checksAndTasks.Add((serviceToCheck, task));
+                return Content(HttpStatusCode.NotFound, "No Implementations of ICheckAvailability found. Please check your injection bindings");
             }
 
-            var isHealthy = true; // Happy, unless proven otherwise
-            foreach (var itemToCheck in checksAndTasks)
+            // Kick of tasks in parallel to perform checks
+            List<(ICheckAvailability AvailabilityChecker, Task<bool>)> runningTasks = availabilityCheckers.Select(x => (x, x.CheckAccessAsync())).ToList();
+
+            var isHealthy = true; // Happy, unless proven proven guilty of unhappiness
+            foreach (var itemToCheck in runningTasks)
             {
                 try
                 {
@@ -47,7 +48,6 @@ namespace Datacom.Common.Diagnostics.WebApi.Api.Controllers.v0
                     //log.Error(ex, $"Failed to complete health check");
                     return InternalServerError(new Exception("Johny Five Segfaulted"));
                 }
-
             }
 
             if (isHealthy)
