@@ -24,18 +24,18 @@ namespace Datacom.Common.Diagnostics.WebApi.Api.Controllers.v0
         {
             if (!availabilityCheckers.Any())
             {
-                return Content(HttpStatusCode.NotFound, "No Implementations of ICheckAvailability found. Please check your injection bindings");
+                return Content(HttpStatusCode.NotImplemented, "No Implementations of ICheckAvailability found. Please check your injection bindings");
             }
 
             // Kick of tasks in parallel to perform checks
-            List<(ICheckAvailability AvailabilityChecker, Task<bool>)> runningTasks = availabilityCheckers.Select(x => (x, x.CheckAccessAsync())).ToList();
+            List<(ICheckAvailability AvailabilityChecker, Task<bool> TaskForResult)> runningTasks = availabilityCheckers.Select(x => (x, x.CheckAccessAsync())).ToList();
+            var isHealthy = true; // Happy, unless proven guilty of unhappiness
 
-            var isHealthy = true; // Happy, unless proven proven guilty of unhappiness
             foreach (var itemToCheck in runningTasks)
             {
                 try
                 {
-                    var result = await itemToCheck.Item2;
+                    var result = await itemToCheck.TaskForResult;
                     if (!result)
                     {
                         // Don't jump out early, it'll be nice to know what services are failing. What if two were failing?

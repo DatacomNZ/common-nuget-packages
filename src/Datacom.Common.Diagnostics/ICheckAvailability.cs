@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 namespace Datacom.Common.Diagnostics
 {
     /// <summary>
-    /// Indicates the ability to check health of service or component for a given system or components within the sytem
+    /// Indicates the ability to check health of service or component for a given system or components within the system
     /// 
     /// Example implementations might be a Datastore health checker, to ensure the database can be communicated with, and records can be read.
     /// </summary>
@@ -40,7 +40,7 @@ namespace Datacom.Common.Diagnostics
 
 
         /// <summary>
-        /// Provide a list of errors in relation to the service being monitored. E.g. for a filestore, the filesystem
+        /// Provide a list of errors in relation to the service being monitored. E.g. for a file-store, the file-system
         /// </summary>
         /// <returns>Never null. Empty list in the case of no errors.</returns>
         Task<List<string>> GetErrorsAsync();
