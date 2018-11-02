@@ -27,7 +27,7 @@ namespace Datacom.Common.Diagnostics.WebApi.Api.Controllers.v0
                 return Content(HttpStatusCode.NotImplemented, "No Implementations of ICheckAvailability found. Please check your injection bindings");
             }
 
-            // Kick of tasks in parallel to perform checks
+            // Kick off tasks in parallel to perform checks
             List<(ICheckAvailability AvailabilityChecker, Task<bool> TaskForResult)> runningTasks = availabilityCheckers.Select(x => (x, x.CheckAccessAsync())).ToList();
             var isHealthy = true; // Happy, unless proven guilty of unhappiness
 
