@@ -15,7 +15,7 @@
     <copyright>Copyright 2018</copyright>
     <tags></tags>
     <dependencies>
-      <dependency id="Datacom.Common.Diagnostics" version="1.0.0-alpha03" />
+      <dependency id="Datacom.Common.Diagnostics" version="1.0.0-alpha07" />
       <dependency id="System.ValueTuple" version="4.5.0" />
     </dependencies>
   </metadata>
