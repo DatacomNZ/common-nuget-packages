@@ -10,12 +10,12 @@
     <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
     <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Diagnotics capabilities for Web-APIs</description>
+    <description>Diagnostics capabilities for Web-APIs</description>
     <releaseNotes>Initial version</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags></tags>
     <dependencies>
-      <dependency id="Datacom.Common.Diagnostics" version="1.0.0-alpha07" />
+      <dependency id="Datacom.Common.Diagnostics" version="1.0.0" />
       <dependency id="System.ValueTuple" version="4.5.0" />
     </dependencies>
   </metadata>
