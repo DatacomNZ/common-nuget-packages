@@ -6,8 +6,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37432321-FB03-4920-B3C2-BC50060F62DF}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		nuget-pack.bat = nuget-pack.bat
-		nuget.exe = nuget.exe
+		Build.ps1 = Build.ps1
+		Package.ps1 = Package.ps1
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datacom.Common.Diagnostics.WebApi", "src\Datacom.Common.Diagnostics.WebApi\Datacom.Common.Diagnostics.WebApi.csproj", "{7AD719ED-9859-4411-BB45-42BFFA077F72}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datacom.Common.Diagnostics", "src\Datacom.Common.Diagnostics\Datacom.Common.Diagnostics.csproj", "{A1C2D38A-91F7-4066-B06C-45DBDE144778}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9CB9EF5F-96CF-4721-AEB0-D9A3CA27A0FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE411881-D225-49A3-97B9-B7152D72343F} = {9CB9EF5F-96CF-4721-AEB0-D9A3CA27A0FA}
+		{D236ED84-701D-4109-9A7B-3FC5FAA79CEE} = {9CB9EF5F-96CF-4721-AEB0-D9A3CA27A0FA}
+		{BDEE100E-19DB-4F89-B89C-9A1E403E6A44} = {9CB9EF5F-96CF-4721-AEB0-D9A3CA27A0FA}
+		{AB42098F-4616-4A8E-9DD9-7912AE5B1C85} = {9CB9EF5F-96CF-4721-AEB0-D9A3CA27A0FA}
+		{F0AAC44B-AC09-4212-A0CF-6C7AB4C053D9} = {9CB9EF5F-96CF-4721-AEB0-D9A3CA27A0FA}
+		{7AD719ED-9859-4411-BB45-42BFFA077F72} = {9CB9EF5F-96CF-4721-AEB0-D9A3CA27A0FA}
+		{A1C2D38A-91F7-4066-B06C-45DBDE144778} = {9CB9EF5F-96CF-4721-AEB0-D9A3CA27A0FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C89C895-C3D8-4A69-B25A-FC75F0C6B55B}
