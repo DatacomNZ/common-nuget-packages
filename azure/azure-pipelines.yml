@@ -38,8 +38,8 @@ steps:
     filePath: '.\Package.ps1'
     arguments: '-version $(Build.BuildNumber) -outputdirectory $(Build.ArtifactStagingDirectory)'
 
-- task: DownloadPipelineArtifact@2
-  inputs:
-    buildType: 'current'
-    itemPattern: '*.nupkg'
-    targetPath: '$(Pipeline.Workspace)'
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'Packages'
+      publishLocation: 'Container'
