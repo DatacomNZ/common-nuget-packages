@@ -1,8 +1,7 @@
 param (
-    [string]$version  = "1.0.0"
+    [string]$version  = "1.0.0",
+    [string]$outputdirectory = "./output"
 )
-
-$outputdirectory = "./output"
 
 dotnet build -c Release
 
