@@ -20,9 +20,9 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
-
 - task: VSBuild@1
   inputs:
+
     solution: '$(solution)'
     msbuildArgs: ''
     platform: '$(buildPlatform)'
@@ -33,13 +33,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: NuGetCommand@2
+- task: PowerShell@2
   inputs:
-    command: 'pack'
-    packagesToPack: '**/*.csproj'
-    packDestination: '$(Build.ArtifactStagingDirectory)'
-    versioningScheme: 'byEnvVar'
-    versionEnvVar: 'BUILD_BUILDNUMBER'
+    filePath: '.\Package.ps1'
+    arguments: '-version $(Build.BuildNumber) -outputdirectory $(Build.ArtifactStagingDirectory)'
 
 - task: DownloadPipelineArtifact@2
   inputs:
