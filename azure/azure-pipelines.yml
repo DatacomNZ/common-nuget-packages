@@ -38,8 +38,8 @@ steps:
     filePath: '.\Package.ps1'
     arguments: '-version $(Build.BuildNumber) -outputdirectory $(Build.ArtifactStagingDirectory)'
 
-  - task: PublishBuildArtifacts@1
-    inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      ArtifactName: 'Packages'
-      publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'Packages'
+    publishLocation: 'Container'
