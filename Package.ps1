@@ -1,8 +1,9 @@
 param (
-    [string]$version  = "1.0.0",
-    [string]$outputdirectory = "./output"
+    [string]$version  = "1.0.1",
+    [string]$outputdirectory = "C:\Users\nialld\source\repos\common-nuget-packages\output"
 )
 
+$outputdirectory = Resolve-Path $outputdirectory
 dotnet build -c Release
 
 remove-item $outputdirectory -force -recurse -ErrorAction SilentlyContinue
@@ -14,3 +15,7 @@ remove-item $outputdirectory -force -recurse -ErrorAction SilentlyContinue
 .\tools\nuget.exe pack "src/Datacom.Common.Mvc/Datacom.Common.Mvc.csproj" -OutputDirectory $outputdirectory -Version $version -properties Configuration=Release
 .\tools\nuget.exe pack "src/Datacom.Common.SignalR/Datacom.Common.SignalR.csproj" -OutputDirectory $outputdirectory -Version $version -properties Configuration=Release
 .\tools\nuget.exe pack "src/Datacom.Common.WebApi/Datacom.Common.WebApi.csproj" -OutputDirectory $outputdirectory -Version $version -properties Configuration=Release
+
+dotnet pack "./src/dotnetCore/Datacom.CommonCore/Datacom.CommonCore.csproj" -o $outputdirectory -c Release -p:PackageVersion=$version
+dotnet pack "./src/dotnetCore/Datacom.CommonCore/Datacom.CommonCore.Collections.csproj" -o $outputdirectory -c Release -p:PackageVersion=$version
+dotnet pack "./src/dotnetCore/Datacom.CommonCore.Diagnostics/Datacom.CommonCore.Diagnostics.csproj" -o $outputdirectory -c Release -p:PackageVersion=$version

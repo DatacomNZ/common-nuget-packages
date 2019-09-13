@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Datacom.CommonCore.Diagnostics</id>
+    <version>$version$</version>
+    <title>Datacom.CommonCore.Diagnostics</title>
+    <authors>Niall Duane</authors>
+    <owners>Datacom NZ</owners>
+    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages/tree/develop/src/dotnetCore/Datacom.CommonCore.Diagnostics</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Diagnostics capabilities for Web-APIs</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags></tags>
+  </metadata>
+</package>
