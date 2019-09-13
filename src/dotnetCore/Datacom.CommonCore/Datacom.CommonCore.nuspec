@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Datacom.CommonCore</id>
+    <version>$version$</version>
+    <title>Datacom.Common</title>
+    <authors>Niall Duane</authors>
+    <owners>Datacom</owners>
+    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages/src/dotnetCore/Datacom.CommonCore/ReadMe.md</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Nuget package that gives some basic functionality.
+      This includes: Search filter and result functionality that incorporates server side paging and sorting. Default exceptions.
+      
+      Please read the project readme for more information.
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Exceptions, Extensions</tags>
+  </metadata>
+</package>
