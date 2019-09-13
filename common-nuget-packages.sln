@@ -33,9 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datacom.CommonCore.Diagnost
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnetFramework", "dotnetFramework", "{DDD4A5B1-BD09-402F-8B41-EA327A68B43C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datacom.CommonCore", "src\dotnetCore\Datacom.CommonCore\Datacom.CommonCore.csproj", "{A726C7B8-D55D-42D5-9381-778DCE68A190}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datacom.CommonCore", "src\dotnetCore\Datacom.CommonCore\Datacom.CommonCore.csproj", "{A726C7B8-D55D-42D5-9381-778DCE68A190}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datacom.CommonCore.Collections", "src\dotnetCore\Datacom.CommonCore.Collections\Datacom.CommonCore.Collections.csproj", "{1D35A5FA-C5CB-4EB0-88E7-4F04F22B179A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datacom.CommonCore.Collections", "src\dotnetCore\Datacom.CommonCore.Collections\Datacom.CommonCore.Collections.csproj", "{1D35A5FA-C5CB-4EB0-88E7-4F04F22B179A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

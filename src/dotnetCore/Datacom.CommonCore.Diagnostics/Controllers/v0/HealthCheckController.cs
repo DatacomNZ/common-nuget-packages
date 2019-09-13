@@ -17,6 +17,11 @@ namespace Datacom.CommonCore.Diagnostics.Controllers.v0
         private readonly List<ICheckAvailability> _availabilityCheckers;
         private readonly ILogger _logger;
 
+        public HealthCheckController(List<ICheckAvailability> availabilityCheckers)
+        {
+            this._availabilityCheckers = availabilityCheckers;
+        }
+
         public HealthCheckController(List<ICheckAvailability> availabilityCheckers, ILogger logger)
         {
             this._availabilityCheckers = availabilityCheckers;
@@ -42,13 +47,20 @@ namespace Datacom.CommonCore.Diagnostics.Controllers.v0
                     var result = await itemToCheck.TaskForResult;
                     if (!result)
                     {
-                        _logger.LogError($"Access Check failed: {itemToCheck.Item1.GetLabel()}");
+                        if (_logger != null)
+                        {
+                            _logger.LogError($"Access Check failed: {itemToCheck.Item1.GetLabel()}");
+                        }
+                        
                         isHealthy = false;
                     }
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError($"Access Check failed", ex);
+                    if (_logger != null)
+                    {
+                        _logger.LogError($"Access Check failed", ex);
+                    }
                 }
             }
 
@@ -57,7 +69,7 @@ namespace Datacom.CommonCore.Diagnostics.Controllers.v0
                 return Ok("Johnny Five Alive");
             }
 
-            return BadRequest("Please check logs");
+            return BadRequest("There are issues with this application. Check the logs");
         }
     }
 }
