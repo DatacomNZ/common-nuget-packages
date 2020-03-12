@@ -6,7 +6,8 @@
     <title>Datacom.CommonCore.Diagnostics</title>
     <authors>Niall Duane</authors>
     <owners>Datacom NZ</owners>
-    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages/tree/develop/src/dotnetCore/Datacom.CommonCore.Diagnostics</projectUrl>
+    <projectUrl>https://github.com/DatacomNZ/common-nuget-packages</projectUrl>
+    <repository type="git" url="https://github.com/DatacomNZ/common-nuget-packages" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Diagnostics capabilities for Web-APIs</description>
     <releaseNotes></releaseNotes>

@@ -6,7 +6,8 @@
     <title>Datacom.Common</title>
     <authors>Niall Duane</authors>
     <owners>Datacom</owners>
-    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages/src/dotnetCore/Datacom.CommonCore/ReadMe.md</projectUrl>
+    <projectUrl>https://github.com/DatacomNZ/common-nuget-packages</projectUrl>
+    <repository type="git" url="https://github.com/DatacomNZ/common-nuget-packages" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Nuget package that gives some basic functionality.

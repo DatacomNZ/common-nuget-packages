@@ -1,21 +1,17 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Datacom.Common.Diagnostics.WebApi</id>
+    <id>Datacom.CommonCore.Collections</id>
     <version>$version$</version>
-    <title>$title$</title>
-    <authors>Troy Gorringe</authors>
+    <title>Datacom.CommonCore.Collections</title>
+    <authors>Niall Duane</authors>
     <owners>Datacom NZ</owners>
     <projectUrl>https://github.com/DatacomNZ/common-nuget-packages</projectUrl>
     <repository type="git" url="https://github.com/DatacomNZ/common-nuget-packages" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Diagnostics capabilities for Web-APIs</description>
-    <releaseNotes>Initial version</releaseNotes>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags></tags>
-    <dependencies>
-      <dependency id="Datacom.Common.Diagnostics" version="1.0.0" />
-      <dependency id="System.ValueTuple" version="4.5.0" />
-    </dependencies>
   </metadata>
 </package>
