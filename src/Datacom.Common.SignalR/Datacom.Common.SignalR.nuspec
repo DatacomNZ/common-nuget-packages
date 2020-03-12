@@ -6,9 +6,8 @@
     <title>Datacom.Common.SignalR</title>
     <authors>Niall Duane</authors>
     <owners>Datacom</owners>
-    <licenseUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages</licenseUrl>
-    <projectUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages/Datacom.Common.SignalR/ReadMe.md</projectUrl>
-    <iconUrl>https://gitlab.datacomdev.co.nz/Midlands/Tools/common-nuget-packages</iconUrl>
+    <projectUrl>https://github.com/DatacomNZ/common-nuget-packages</projectUrl>
+    <repository type="git" url="https://github.com/DatacomNZ/common-nuget-packages" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Nuget package that gives some basic functionality.
