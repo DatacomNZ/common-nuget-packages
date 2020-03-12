@@ -1,9 +1,7 @@
 param (
-    [string]$version  = "1.0.1",
-    [string]$outputdirectory = "C:\Users\nialld\source\repos\common-nuget-packages\output"
+    [string]$version  = "1.0.1-alpha",
+    [string]$outputdirectory = "$(Get-Location)\output"
 )
-
-$outputdirectory = Resolve-Path $outputdirectory
 dotnet build -c Release
 
 remove-item $outputdirectory -force -recurse -ErrorAction SilentlyContinue
